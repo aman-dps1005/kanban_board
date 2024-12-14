@@ -98,5 +98,5 @@ This project is open-source and available under the [MIT License](LICENSE).
 ## Contact
 
 For any questions or issues, feel free to reach out at:
-- **Name**: [Your Name]
-- **Email**: [Your Email]
+- **Name**: Devi Prasad Satapathy
+- **Email**: deviprasadsatapathy1005@gmail.com
