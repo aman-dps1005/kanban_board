@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import type { Task, Column as ColumnType } from './types';
 import { Column } from './Column';
 import { DndContext, DragEndEvent } from '@dnd-kit/core';
+import { useRecoilState } from 'recoil';
+import { taskAtom } from './store/atoms/taskAtom';
 
 const COLUMNS: ColumnType[] = [
   { id: 'TODO', title: 'To Do' },
@@ -11,7 +13,7 @@ const COLUMNS: ColumnType[] = [
 ];
 
 export default function App() {
-  const [tasks, setTasks] = useState<Task[]>([]);
+  const [tasks, setTasks] = useRecoilState(taskAtom);//used recoil atom for tasks from local storage
   const [newTaskTitle, setNewTaskTitle] = useState('');
   const [newTaskDescription, setNewTaskDescription] = useState('');
   const [isFormVisible, setFormVisible] = useState(false);
