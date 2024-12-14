@@ -52,14 +52,12 @@ The project files are organized as follows:
 
 ```
 ├── src/
-│   ├── components/
-│   │   ├── TaskCard.tsx       # Task card component with drag-and-drop functionality
-│   │   ├── Column.tsx         # Column component to group tasks
+│   ├── TaskCard.tsx       # Task card component with drag-and-drop functionality
+│   ├── Column.tsx         # Column component to group tasks
 │   ├── store/
 │   │   ├── atoms/
 │   │   │   ├── taskAtom.ts    # Recoil atom for task management
-│   ├── types/
-│   │   ├── index.ts           # Type definitions for tasks and columns
+│   ├── types.ts           # Type definitions for tasks and columns
 │   ├── App.tsx                # Main application file
 │   ├── index.css              # Global CSS (integrated with Tailwind)
 │   ├── main.tsx               # Application entry point
